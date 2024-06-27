@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:rgb(39, 36, 36);
+        
+        }
+        header{
+            background-color:gray;
+            color:white;
+            width: 100vw;
+            height: 35px;
+            padding-top: 15px; 
+            margin: 5px;
+        }
+        header .main_header{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header .logo{
+            width: 25%;
+        }
+        header .burger{
+            text-align: right;
+            cursor: pointer;
+            width: 25%; 
+        }
+        .nav_items{
+            width: 40%;
+        }
+        .nav_items ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav_items ul li {
+            list-style-type: none;
+        }
+        .nav_items a {
+            text-decoration: none;
+            color: white;
+        }
+        .nav_items a:hover{
+            color: plum;
+        }
+        .main_div{
+            display: flex;
+            flex-direction: row;   
+            margin:3em 3em ;
+        }
+        .discribe{
+            width: 50vw;
+            height: 30vh;
+            color:rgb(255, 255, 255);
+            text-align: center;
+            margin: 0em 0em;
+            font-size: 2em;
+            padding: 35px; 
+        }
+        .pic{
+            width: 50vw;
+            height: 30vh;
+            align-items: center;
+            text-align: center; 
+        }
+        #profile_pic{
+            border-radius: 6em;
+            height: 30vh;
+            width: 12vw;
+            margin: 2em;
+        }
+        
+        .discribe span {
+            color: rgb(161 73 161);
+        }
+        .technical_skills{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* background: plum; */
+            margin: 1em;;
+        }
+        .FrontEnd{
+            width: 30vw;
+            height: 30vh;
+            background: papayawhip;
+            text-align: center;
+            padding-top: 2em;
+        }
+        .FrontEnd ,.BackEnd, ul {
+            list-style-type: none;
+        }
+        .BackEnd{
+            width: 30vw;
+            height: 30vh;
+            background: papayawhip;
+            text-align: center;
+            padding-top: 2em;
+        }
+        .DataBase{
+            width: 30vw;
+            height: 30vh;
+            background: papayawhip;
+            text-align: center;
+            padding-top: 2em;
+        }
+        .label, .specialization_label{
+            color: white;
+            text-align:center;
+            text-transform: capitalize;
+            font-weight: bold;
+            margin: 2em 0em;
+        }
+        .specialization_in{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: blueviolet;
+            padding: 1em;
+            margin: 1em;
+            text-align: center;
+        }
+        .heading{
+            margin: 2em;
+        }
+        #projects{
+            text-align: center;
+            color: whitesmoke;
+        }
+        .show_projects{
+            display: flex;
+            font-display: row;
+            justify-content:space-around;
+            background:purple;
+            text-align: center;
+            margin: 1em 0em;
+            color: white;
+        }
+        .frontend_projects{
+            background: plum;
+            width: 30vw;
+            height: 30vh;
+            margin: 1em;
+            padding-top: 1em;
+        }
+        .backend_projects{
+            background: plum;
+            width: 30vw;
+            height: 33vh;
+            margin: 1em;
+        }
+        .database_projects{
+            background: plum;
+            width: 30vw;
+            margin: 1em;
+            height: 30vh;
+            padding-top: 1em;
+        }
+        
+            .show_backend_projects{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        .turtle_projects,.tkinter_projects{
+            width: 15vw;
+            height: 25vh;
+            background: #b38bac;
+            color: white;
+            
+        }
+        .Eda_projects{
+            background: plum;
+            width: 30vw;
+            margin: 1em;
+            height: 30vh;
+            padding-top: 1em;
+        }
+        .line{
+            width: 8px;
+            height: 3px;
+            background: white;
+        }   
+        .languages_known{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background: plum;
+            color: white;
+            width: 25vw;
+            height: 10vw;
+            text-align: center;
+            margin: 2em;
+            padding: 2em;
+            position: absolute;
+            left:30%;
+            /* HOw to  center this div? */
+        }
+        .languages{
+         font-size: 1.4em;
+         padding: 0.1em;
+        }
+        /* @media screen and  (max-width:475px) {
+            .main_div{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            } 
+        } */
+        /* how to make nav bar dynamic? */
+        </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="main_header">
+                <div class="logo"><p>Hello iam logo</p></div>
+                <div class="nav_items">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">details</a></li>
+                    </ul>
+                </div>
+                <div class="burger"><div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div></div>
+            </div>
+        </nav>
+    </header>
+    <div class="main_div">
+        <div class="discribe"> <div>Hi,Myself<span> Mohammed Ehtesham</span></div>
+        <div>and iam a passionate about</div>
+        <div> <span id="element"> development and analysis</span></div>
+        <div class="button">
+            <button id="download_resume"><a href="C:\Users\user\OneDrive\Desktop\REsumes">Download Resume</a></button>
+            <button id="visit_githut"><a href="https://github.com/MdEhtesham2004?tab=overview&from=2024-04-01&to=2024-04-30">Visit Github</a></button>
+        </div></div>
+        <div class="pic"><img src="profile_pic.jpg" alt="sorry image is not available" id="profile_pic"></div>
+    </div>
+       <div class="label"> <h1>technical Skills:</h1></div>
+    <div class="technical_skills">
+        <div class="FrontEnd"><ul>
+            <h3>FrontEnd:</h3>
+            <li>Html5</li>
+            <li>Css3</li>
+            <li>Javascript</li>
+            <li>Tailwind css</li>
+            <li>Bootstrap</li>
+        </ul> </div>
+        <div class="BackEnd"><ul>
+            <h3>BackEnd:</h3>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>DataStructurs using c/c++</li>
+            <li>C Language</li>
+        </ul> </div>
+        <div class="DataBase"><ul>
+            <h3>DataBase:</h3>
+            <li>Structure Query language(SQL)</li>
+            <li>Relational Database Management System</li>
+            <li>Database Design</li>
+        </ul></div>
+    </div>
+    <div class="specialization_label"><h1>Specialization In: </h1></div>
+    <div class="specialization_in">
+        <div class="heading">
+        <!-- <h2>Specialization in:</h2> -->
+        <h2>Advance Python and statistics</h2>
+        <h3>Modules Known:➡</h3>
+    </div>
+    <div class="exploratory_dataanalysis">
+        <h2>In Exploratory Data analysis:</h2>
+        <ul>
+        <li>Numpy</li>
+        <li>Pandas</li>
+        <li>MatplotLib</li>
+        <li>Seaborn</li>
+    </ul>
+</div>
+<div class="gui">
+    <h2>In Graphical Design:</h2>
+    <ul><li>Python Turtle</li></ul>
+    <h2>In Graphical User Interface:</h2>
+    <ul><li>Tkinter module</li></ul>
+</div>     
+</div>
+<h1 id="projects">Projects Done:</h1>
+
+<div class="show_projects">
+    <div class="frontend_projects">
+        <h2>FrontEnd Projects:</h2>
+        <ul><li>Ecommerce Template</li>
+        <li>Login Form using js validations</li>
+        <li>Flipcart clone</li></ul>
+    </div>
+    <div class="backend_projects">
+        <h2>Backend Projects:</h2>
+        <!-- <div>backend projects</div> -->
+        <div class="show_backend_projects">
+        <div class="turtle_projects"> <h3>Turtle Projects:</h3>
+            <ul><li>SnakeGame</li>
+            <li>Two Players PongGame</li>
+            <li>Boucing Ball Game</li></ul>
+        </div>
+        <div class="tkinter_projects"> <h3>Tkinter Projects:</h3>
+            <ul><li>Login portal for College Website</li>
+                <li>Pomodoro Timer</li>
+                <li>Password Manager</li>
+                <li></li>Stop Watch</ul>
+            </div>
+        </div>
+    </div>
+    <div class="database_projects"><h2>Database Projects:</h2>
+    <ul><li>Created and designed successfully <br>Service Sector DataBase</li>
+    </ul></div>
+    <div class="Eda_projects">
+        <h2>Exploratory Data Analysis:</h2>
+        <ul>
+            <li>On Titanic Dataset </li>
+            <li>On Diwali sales</li>
+            <li>On Student's Result Dataset</li>
+        </ul>
+    </div>
+</div>
+<div class="languages_known">
+    <h2>Languages Knows:</h2>
+    <div class="languages">
+    <ul><li>English</li>
+    <li>Hindi</li>
+    <li>Telugu</li></ul>
+</div>
+</div>
+</body>
+<script>
+     let typed = new Typed('#element', {
+        strings: ['Development  &amp;.', ' Analysis.'],
+        typeSpeed: 50,
+    });
+
+</script>
+</html>
